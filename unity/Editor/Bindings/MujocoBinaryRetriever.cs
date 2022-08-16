@@ -36,7 +36,7 @@ public class MujocoBinaryRetriever {
         if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) {
           if (AssetDatabase.LoadMainAssetAtPath(mujocoPath + "/mujoco.dylib") == null) {
             File.Copy(
-                "/Applications/MuJoCo.app/Contents/Frameworks" +
+                "/Applications/MuJoCo_v2.2/MuJoCo.app/Contents/Frameworks" +
                 "/mujoco.framework/Versions/Current/libmujoco.2.2.1.dylib",
                 mujocoPath + "/mujoco.dylib");
             AssetDatabase.Refresh();
